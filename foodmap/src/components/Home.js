@@ -1,6 +1,8 @@
-import React, {Component} from "react";
-import {Link} from "react-router-dom";
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import React from "react";
+import MapComponent from "./MapComponent";
+import { Link } from "react-router-dom";
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+
 
 class Home extends React.Component{
     render(){
@@ -22,8 +24,4 @@ class Home extends React.Component{
     }
 }
 
-
-
-export default GoogleApiWrapper({
-    apiKey: ("AIzaSyC0VLXysIX4t0QzQlWFO0VIUyFfRZLV8nA")
-  })(Home)
+export default Home;
